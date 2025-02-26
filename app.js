@@ -110,12 +110,10 @@ console.log('Exercise 7 Result:', calculateTip(100, 33));
 function convertTemperature(temp, scale) {
     if (scale === "C") {
         temp = (temp -32) *(5 / 9);
-        tempCelsius = temp + " (Celcius)";
-        return tempCelsius;
+        return tempCelsius = temp + " (Celcius)";
     } else if (scale === "F") {
         temp = (temp * (9/5)) + 32;
-        tempFaren = temp + " (Farenheit).";
-        return tempFaren;
+        return tempFaren = temp + " (Farenheit).";
     } else {
         console.log("ERROR - Incorrect input, use 'C' or 'F'.")
     }
@@ -127,47 +125,37 @@ console.log('Exercise 8 Result:', convertTemperature(32, "F"))
 
 function basicCalculator(x, y, operation) {
     if (operation === "add") {
-        answer = x + y;
-        return answer;
+        return answer = x + y;
     } else if (operation === "subtract") {
-        answer = x - y;
-        return answer;
+        return answer = x - y;
     } else if (operation === "multiply") {
-        answer = x * y;
-        return answer;
+        return answer = x * y;
     } else if (operation === "divide") {
-        answer = x / y;
-        return answer;
+        return answer = x / y;
     }
 }
 
-console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"))
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "divide"))
 
 /*--- EXERCISE 10 calculateGrade()---*/
 
 function calculateGrade(score) {
     if (score >= 90) {
-        score = "A";
-        return score;
+        return grade = "A";
     } else if (score >= 80 && score < 90) {
-        score = "B";
-        return score;
+        return grade = "B";
     } else if (score >= 70 && score < 80) {
-        score = "C";
-        return score;
+        return grade = "C";
     } else if (score >= 60 && score < 70) {
-        score = "D";
-        return score;
+        return grade = "D";
     } else if (score >= 0 && score < 60) {
-        score = "F";
-        return score;
+        return grade = "F";
     } else {
-        score = "ERROR - INVALID INPUT";
-        return score;
+        return grade = "ERROR - INVALID INPUT";
     }
 }
 
-console.log('Exercise 10 Result', calculateGrade(61));
+console.log('Exercise 10 Result', calculateGrade(62));
 
 /*--- EXERCISE 11 createUsername()---*/
 
@@ -175,8 +163,7 @@ function createUsername(firstName, lastName) {
     nameLength = firstName.length + lastName.length; // 13
     firstName = firstName.substring(0, 3); // "Sam"
     lastName = lastName.substring(0, 3); // "Gre"
-    userName = firstName + lastName + nameLength;
-    return userName;
+    return userName = firstName + lastName + nameLength;
 }
 
 console.log('Exercise 11 Result:', createUsername("John", "Ng"));
