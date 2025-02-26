@@ -11,14 +11,7 @@ const maxOfTwoNumbers = (x, y) => {
 console.log('Exercise 1 Result: ' + maxOfTwoNumbers(15, 9));
 
 /*--- EXERCISE 2 isAdult()---*/
-/*
-Write a function named isAdult. It should take an age (number) 
-and return 'Adult' if the age is 18 or over and 'Minor' otherwise.
 
-Example: isAdult(21) should return 'Adult'.
-
-Complete the exercise in the space below:
-*/
 function isAdult(age) {
     if (age >= 0 && age < 18) {
         age = 'Minor'
