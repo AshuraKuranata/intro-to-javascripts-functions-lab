@@ -14,14 +14,11 @@ console.log('Exercise 1 Result: ' + maxOfTwoNumbers(15, 9));
 
 function isAdult(age) {
     if (age >= 0 && age < 18) {
-        age = 'Minor'
-        return age;
+        return age = 'Minor';
     } else if (age >= 18) {
-        age = 'Adult'
-        return age;
+        return age = 'Adult';
     } else {
-        age = 'Error: Invalid Input'
-        return age;
+        return age = 'Error: Invalid Input';
     }
 }
 
@@ -72,8 +69,7 @@ console.log('Exercise 3 Result:', isCharAVowel("a"));
 /*--- EXERCISE 4 generateEmail()---*/
 
 function generateEmail(name, domain) {
-    email = name + '@' + domain;
-    return email;
+    return email = name + '@' + domain;
 }
 
 console.log('Exercise 4 Result:', generateEmail("randomexample", "gmail.com"))
@@ -81,8 +77,7 @@ console.log('Exercise 4 Result:', generateEmail("randomexample", "gmail.com"))
 /*--- EXERCISE 5 greetUser()---*/
 
 function greetUser(name, timeOfDay) {
-    greetings = "Good " + timeOfDay + ", " + name
-    return greetings;
+    return greetings = "Good " + timeOfDay + ", " + name;
 }
 
 console.log('Exercise 5 Results:', greetUser("Tony Stark", "evening"));
@@ -147,3 +142,49 @@ function basicCalculator(x, y, operation) {
 }
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"))
+
+/*--- EXERCISE 10 calculateGrade()---*/
+
+function calculateGrade(score) {
+    if (score >= 90) {
+        score = "A";
+        return score;
+    } else if (score >= 80 && score < 90) {
+        score = "B";
+        return score;
+    } else if (score >= 70 && score < 80) {
+        score = "C";
+        return score;
+    } else if (score >= 60 && score < 70) {
+        score = "D";
+        return score;
+    } else if (score >= 0 && score < 60) {
+        score = "F";
+        return score;
+    } else {
+        score = "ERROR - INVALID INPUT";
+        return score;
+    }
+}
+
+console.log('Exercise 10 Result', calculateGrade(61));
+
+/*--- EXERCISE 11 createUsername()---*/
+
+function createUsername(firstName, lastName) {
+    nameLength = firstName.length + lastName.length; // 13
+    firstName = firstName.substring(0, 3); // "Sam"
+    lastName = lastName.substring(0, 3); // "Gre"
+    userName = firstName + lastName + nameLength;
+    return userName;
+}
+
+console.log('Exercise 11 Result:', createUsername("John", "Ng"));
+
+/*--- EXERCISE 12 numArgs()---*/
+
+function numArgs() {
+    return answer = arguments.length;
+}
+
+console.log('Exercise 12 Result:', numArgs(2, 3, 4, "I don't know what I'm doing"));
